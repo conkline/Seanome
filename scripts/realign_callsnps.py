@@ -13,6 +13,8 @@ from collections import defaultdict
 from Bio.Sequencing import Ace
 from Bio import SeqIO
 from htb import htb
+from haplotype import callHaplos
+from bam_vcf import writeBam, dictToCounts
 
 #get reverse complement of sequence
 def revComp(dnaSeq):
